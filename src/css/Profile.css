@@ -1,0 +1,62 @@
+.Profile {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+  }
+
+  .User-detail {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+  }
+  
+  hanko-profile {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  hanko-profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  hanko-profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  hanko-profile li {
+    margin-bottom: 10px;
+    
+  }
+
+  .Profile {
+    padding: 20px;
+  }
+  
+  .User-detail {
+    margin-bottom: 20px;
+  }
+  
+  .butt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .nav {
+    text-align: right;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  

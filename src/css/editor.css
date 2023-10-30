@@ -1,0 +1,51 @@
+.edit-box {
+    margin: auto;
+    /* margin-top: 20px; */
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .notes {
+    margin-top: 20px;
+  }
+  
+  .notes > div {
+    margin-bottom: 20px;
+  }
+  
+  .notes > div > h3 {
+    font-size: 20px;
+  }
+  

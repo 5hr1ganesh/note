@@ -1,0 +1,225 @@
+.note-card {
+    display: flex;
+    /* flex-flow: column wrap; */
+    align-items: center;
+    justify-content:space-between;
+    /* padding: 4px; */
+    width:fit-content;
+    height: auto;
+    border-style:hidden;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 10px;
+    margin: 0px;
+    margin: 4px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.Notes-Container {
+    /* display: flex; */
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 250px;
+    padding: 2px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 10px;
+}
+
+.Note-Title {
+    font-size: x-large;
+    width: 96%;
+    padding: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Note-Description {
+    white-space: pre-line; 
+    width: 96%;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Note-DeleteSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Note-DeleteSection > img {
+    visibility: hidden;
+    padding: 4px;
+    height: 16px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.Modal {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(18,18,18,0.6);
+}
+
+.Modal-Content {
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 75%;
+    background-color: #202124;
+    z-index: 1;
+    border: #484848 1px solid;
+    border-radius: 10px;
+    box-shadow:  1px 4px 4px #121212, 0 4px 4px 1px #121212;
+    animation: show 0.4s;
+}
+
+.Modal-Save-Text {
+    padding: 3px;
+    color: grey;
+}
+
+.Modal-Title {
+    font-size: xx-large;
+    width: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    margin: 5px;
+    background-color: #202124;
+    color: #e8eaed;
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+
+.Modal-Description {
+    font-size: large;
+    width: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px;
+    background-color: #202124;
+    color: #e8eaed;
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+
+.Modal-Close {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Modal-Close-Text {
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+    background-color: #202124;
+    color: #e8eaed;
+    border-radius: 10px;
+}
+
+.Modal-Delete {
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+    background-color: #202124;
+    color: #e8eaed;
+    border-radius: 10px;
+}
+
+.Modal-Close-Text:hover {
+    background-color: #484848;
+}
+
+.Modal-Delete:hover {
+    background-color: #7f0000;
+}
+
+.Note:hover {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.Note:hover  .Note-DeleteSection > img{
+    visibility: visible;
+}
+
+.Note-DeleteSection > img:hover {
+    background-color: #484848;
+}
+
+/* Animation for modal */
+@keyframes show {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        z-index: -1;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.note-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .Notes-Container {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #00ff00;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ff0000;
+    color: white;
+  }
+  

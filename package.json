@@ -1,13 +1,21 @@
 {
-  "name": "chads-chat",
+  "name": "notea",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "@teamhanko/hanko-elements": "^0.9.0",
+    "@teamhanko/hanko-frontend-sdk": "^0.9.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
+    "react-button": "^1.2.1",
+    "react-chat-module": "^1.1.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

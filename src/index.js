@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './css/global.css';
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+// import Login from './Login';
+import Profile from './Profile';
+// import LoginBtn from './Login';
+import HankoAuth from './Login';
+import Note from './Note';
+import Notes from './Notes';
+import NoteEditor from './editor';
+import LandingPage from './landingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />}/>
+        <Route path="/login" element={<HankoAuth />}/>
+        <Route path="/Note" element={<Note />}/>
+        <Route path="/NoteEditor" element={<NoteEditor />}/>
+        <Route path="/Notes" element={<Notes />}/>
+        <Route path="/profile" element={<Profile/>}/>        
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
